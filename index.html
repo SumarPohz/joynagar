@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tripura Khasi Meeting Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>KHASI JAINTIA COMMUNITY OF TRIPURA</h1>
+    <h2>Sngewbha pyndap kane ka form khnang ba ngin lah ban pynbeit ia ka sngi bad jaka ban pynlong ia ka meeting</h2>
+    <form id="meetingForm" data-netlify="true">
+        <label for="name">Kyrteng*:</label>
+        <input type="text" id="name" name="name" required>
+
+      <label for="meetingDate">Select a meeting date*:</label>
+      <select id="meetingDate" name="meetingDate" required>
+        <option value="">-- Jied ia ka tarik --</option>
+        <option value="05/08/2023">05/08/2023</option>
+        <option value="15/08/2023">15/08/2023</option>
+        <option value="19/08/2023">19/08/2023</option>
+        <option value="cancel">Lah cancel noh ia ka meeting</option>
+      </select>
+
+      <label for="meetingPlace">Select a meeting place*:</label>
+      <select id="meetingPlace" name="meetingPlace" required>
+        <option value="">-- Jied ia ka Jaka --</option>
+        <option value="Balicherra : Part - 1">Balicherra : Part - 1</option>
+        <option value="Balicherra : Part - 2">Balicherra : Part - 2</option>
+        <option value="Cancel Meeting">Lah cancel noh ia ka meeting</option>
+      </select>
+
+      <button type="submit" onclick="showThankYou()">Submit</button>
+      
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

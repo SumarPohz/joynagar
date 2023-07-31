@@ -200,23 +200,6 @@ a {
   box-shadow: 0 4px 8px #fff;
 }
 
-/* CSS for the popup container */
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999; /* Adjust the z-index as needed to ensure the popup appears on top */
-  /* Add additional styling (e.g., background, padding) to enhance the look of the popup */
-}
-
-/* Optional overlay to dim the background when the popup is open */
-.overlay {
-  /* Set the overlay properties such as position, background color, opacity, etc. */
-  /* Adjust the z-index to ensure the overlay covers the rest of the content but stays below the popup container */
-}
-
 /* Footer styles */
 footer {
   text-align: center;

@@ -41,3 +41,9 @@ slider.addEventListener("mouseout", () => {
 
 // Show the initial slide
 showSlide(currentSlide);
+
+// JavaScript to show the popup when the page loads
+window.onload = function() {
+  var popupContainer = document.getElementById('popupContainer');
+  popupContainer.style.display = 'block';
+};

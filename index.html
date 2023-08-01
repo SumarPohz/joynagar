@@ -91,9 +91,41 @@
         <li>Playing time - 25 minutes + 25 minutes</li>
       </ol>
       <br>
-      
-      <embed src="pdfs/joy.pdf#page=1" width="350px" height="550px" type="application/pdf">
-        
+
+      <div id="pdfViewer" style="width: 350px; height: 550px; overflow: auto;">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script>
+        const pdfFile = "pdfs/joy.pdf";
+        const container = document.getElementById("pdfViewer");
+        let scale = 1.0;
+
+        function renderPage(pageNumber) {
+            pdfjsLib.getDocument(pdfFile).promise.then(function (pdf) {
+                pdf.getPage(pageNumber).then(function (page) {
+                    const viewport = page.getViewport({ scale });
+                    const canvas = document.createElement("canvas");
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    const context = canvas.getContext("2d");
+
+                    const renderContext = {
+                        canvasContext: context,
+                        viewport
+                    };
+
+                    page.render(renderContext);
+                    container.appendChild(canvas);
+                });
+            });
+        }
+
+        pdfjsLib.getDocument(pdfFile).promise.then(function(pdf) {
+            for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+                renderPage(pageNumber);
+            }
+        });
+    </script> 
       <h4><strong>Contact:</strong></h4>
       <ul>
         <li><a href="tel:+919366373189">936***3189</a></li>

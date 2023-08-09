@@ -87,7 +87,9 @@ body {
     object-fit: cover;
   }
 
-
+  .container {
+    position: relative;
+  }
   
 .container {
     position: relative;
@@ -102,13 +104,13 @@ body {
     background-color: #333;
     color: #fff;
     width: 20px;
-    height: 130px;
+    height: 150px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: #fff;
   }
   .mini-button:hover {

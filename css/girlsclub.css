@@ -1,17 +1,18 @@
 body {
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
-  background : linear-gradient(grey, rgb(184, 142, 149), grey);
-  background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background : linear-gradient(grey, rgb(184, 142, 149), grey);
+    background-color: #f5f5f5;
 }
 
+  
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background : linear-gradient(grey, #c4f1f3, grey);
-  padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background : linear-gradient(grey, #c4f1f3, grey);
+    padding: 2px;
 }
   
 .logo {

@@ -8,21 +8,10 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-564B62FP');</script>
   <!-- End Google Tag Manager -->
-  <style>
-    #pdfViewerContainer {
-        width: 350px;
-        height: 550px;
-        overflow: auto;
-    }
-    .zoomButtons {
-        text-align: center;
-        margin-top: 10px;
-    }
-</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joynagar Club</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
@@ -47,11 +36,12 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <script src="index.js"></script>
   </header>
   <div class="slider-container">
     <div class="slider" id="slider">
       <img src="./img/logo.jpg" alt="Image 1">
-      <img src="./img/Sl1.jpg" alt="image 5">
+       <img src="./img/Sl1.jpg" alt="image 5">
       <img src="./img/Sl2.jpg" alt="image 6">      
       <img src="./img/Sl3.jpg" alt="image 7">
       <img src="./img/Sl4.jpg" alt="image 8">
@@ -64,6 +54,12 @@
       <img src="./img/Untitled-1 copy.jpg" alt="Image 2">
     </div>
   </div>
+  <script src="./js/index.js"></script>
+  <div class="container">
+    <button class="mini-button"><a href="newupdate.html"><b>Upcoming Match</b></a></button>
+    <div class="content">
+      <!-- Your main content here -->
+    </div>
   <script src="./js/index.js"></script>
   <section class="tour-page">
     <div><strong><h4>JOYNAGAR BAPTISH YOUTH FELLOWSHIP</strong><br>
@@ -85,7 +81,7 @@
     </div>
   </fieldset></p>
   <div class="club-registrarion">
-    <a href="boys-girls-registration.html" class="fixed-button">Club Registration</a>
+    <a href="boys-girl-registration.html" class="fixed-button">Club Registration</a>
   </div>
   <div class="remember">
     <br>
@@ -102,79 +98,17 @@
         <li>Playing time - 25 minutes + 25 minutes</li>
       </ol>
       <br>
+      <embed src="img/pdf/JOYNAGAR BAPTIST YOUTH FELLOWSHIP1.pdf" width="350" height="450" type="application/pdf">
 
-      <div id="pdfViewerContainer">
-      </div>
-      <div class="zoomButtons">
-          <button onclick="zoomOut()">Zoom Out</button>
-          <button onclick="zoomIn()">Zoom In</button>
-      </div>
-      <button onclick="downloadPDF()">Download PDF</button>
-  
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-      <script>
-          const pdfFile = "pdfs/joy.pdf";
-          const pdfViewerContainer = document.getElementById("pdfViewerContainer");
-          const zoomButtons = document.querySelector(".zoomButtons");
-          let scale = 1.0;
-  
-          function renderPage(page) {
-              const viewport = page.getViewport({ scale });
-              const canvas = document.createElement("canvas");
-              canvas.width = viewport.width;
-              canvas.height = viewport.height;
-              const context = canvas.getContext("2d");
-  
-              const renderContext = {
-                  canvasContext: context,
-                  viewport
-              };
-  
-              page.render(renderContext);
-              pdfViewerContainer.appendChild(canvas);
-          }
-  
-          pdfjsLib.getDocument(pdfFile).promise.then(function(pdf) {
-              for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-                  pdf.getPage(pageNumber).then(renderPage);
-              }
-          });
-  
-          function zoomIn() {
-              scale += 0.1;
-              pdfViewerContainer.innerHTML = "";
-              pdfjsLib.getDocument(pdfFile).promise.then(function(pdf) {
-                  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-                      pdf.getPage(pageNumber).then(renderPage);
-                  }
-              });
-          }
-  
-          function zoomOut() {
-              scale -= 0.1;
-              pdfViewerContainer.innerHTML = "";
-              pdfjsLib.getDocument(pdfFile).promise.then(function(pdf) {
-                  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-                      pdf.getPage(pageNumber).then(renderPage);
-                  }
-              });
-          }
-  
-          function downloadPDF() {
-              const link = document.createElement("a");
-              link.href = pdfFile;
-              link.download = "your_file.pdf";
-              link.click();
-          }
-      </script>
       <h4><strong>Contact:</strong></h4>
       <ul>
-        <li><a href="tel:+919366373189">936***3189</a></li>
-        <li><a href="tel:+917676521575">767***1575</a></li>
-        <li><a href="tel:+919366244469">936***4469</a></li>
-        <li><a href="tel:+919366967885">936***7885</a></li>
+        <li><a href="tel:+919366373189">936****189</a></li>
+        <li><a href="tel:+917676521575">767****575</a></li>
+        <li><a href="tel:+919366244469">936****469</a></li>
+        <li><a href="tel:+919366967885">936****885</a></li>
       </ul>
-  </div> 
+  </div>
+
 </section>
   <div class="video-section">
     <!-- Add your video content here -->

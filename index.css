@@ -94,6 +94,7 @@ body {
 .container {
     position: relative;
     align-items: center;
+    text-align: center;
   }
   
   .mini-button {
@@ -112,15 +113,6 @@ body {
     text-orientation: mixed;
     font-size: 16px;
     box-shadow: #fff;
-  }
-  .mini-button:hover {
-    background-color: #fff;
-  }
-  .mini-button a {
-    color: #fff;
-  }
-  .mini-button a:hover {
-    color: #333;
   }
 .content {
     margin-left: 20px;

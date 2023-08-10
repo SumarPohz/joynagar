@@ -99,7 +99,7 @@ body {
   
   .mini-button {
     position: fixed;
-    top: 50%;
+    top: 70%;
     left: 0;
     transform: translateY(-50%);
     background-color: #333;
@@ -114,6 +114,10 @@ body {
     font-size: 16px;
     box-shadow: #fff;
   }
+  .mini-button:hover {
+    background-color: #fff;
+    color: #333;
+  }  
 .content {
     margin-left: 20px;
     padding: 20px;

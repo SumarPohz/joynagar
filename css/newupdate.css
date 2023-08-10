@@ -3,8 +3,10 @@ body {
     padding: 0;
     text-align: center;
     color: #fff;
-    background-color: #333;
+    background-color: #858181;
+    font-family: 'Lora', serif;
 }
+
 img {
     display: flex;
     justify-content: center;
@@ -13,4 +15,108 @@ img {
     width: 100%;
     height: 100%;
     padding: 0;
+}
+
+/* styles.css */
+
+/* Reset some default styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+  }
+  
+  .container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #858181;
+    font-family: Arial, sans-serif;
+  }
+  
+  .days {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .day-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fff;
+  }
+  .day-button:hover {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px #333;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #584c4c;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #image-container {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  #video-container {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .winners {
+    text-align: center;
+  }
+  
+  #winner-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+  }
+
+  
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20%;
+  margin-bottom: 0;
+  padding: 10px;
+  background : transparent;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #a5e037;
 }

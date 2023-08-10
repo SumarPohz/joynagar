@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Match</title>
     <link rel="stylesheet" href="css/newupdate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+  <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 </head>
 <body>
-    <img src="img/Day1.jpg" alt="Upcoming Match Day1">
-    <figcaption>Day-1</figcaption>
-    <img src="img/Day2.jpg" alt="Upcoming Match Day2">
-    <figcaption>Day-2</figcaption>
-    <img src="img/Day3.jpg" alt="Upcoming Match Day3">
-    <figcaption>Day-3</figcaption>
+    <div class="container">
+        <div class="days">
+            <button class="day-button" data-day="1">Day 1</button>
+            <button class="day-button" data-day="2">Day 2</button>
+            <button class="day-button" data-day="3">Day 3</button>
+        </div>
+        <div class="content">
+          <div class="media-container">
+            <img id="image-container" src="img/main.jpg" alt="Football Image">
+            <div class="plyr__video-embed" id="video-container">
+              <video id="video-container" controls>
+                <source src="" type="video/mp4">
+              </video>
+          </div>
+          <div class="winners">
+            <h2>Winners:</h2>
+            <p id="winner-info">Click button 'Day 1' 'Day 2' 'Day 3'</p>
+            <!-- Add winner info for other days here -->
+          </div>
+        </div>
+      </div>
+      <script src="./js/day1.js"></script>
+      <footer>
+        Design & coded by - <a href="https://wa.me/918787509536">SUMARBHA POHSNEM</a>
+      </footer>
 </body>
 </html>

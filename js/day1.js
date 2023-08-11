@@ -7,7 +7,7 @@ const winnerInfo = document.getElementById('winner-info');
 // Array to store winner information for each day
 const winners = [
     '1. Young Boys (02-00)\n2. Young FC (02-03)\n3. Zorolian Girls (02-00)\n4. OHS Fc (00-02)', // Day 1 winner
-    'loading...', // Day 2 winner
+    '1. Vomthat (01-10)\n2. Sobiri (01-00)\n3. Kishan Sport Club (00-04)\n4. Bombastick Fc (01-00)\n5. Morning Star Fc (win by cross goal)', // Day 2 winner
     'loading...'  // Day 3 winner
   ];
 

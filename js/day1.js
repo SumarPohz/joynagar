@@ -8,7 +8,8 @@ const winnerInfo = document.getElementById('winner-info');
 const winners = [
     '1. Young Boys (02-00)\n2. Young FC (02-03)\n3. Zorolian Girls (02-00)\n4. OHS Fc (00-02)', // Day 1 winner
     '1. Vomthat (01-10)\n2. Sobiri (01-00)\n3. Kishan Sport Club (00-04)\n4. Bombastick Fc (01-00)\n5. Morning Star Fc (win by cross goal)', // Day 2 winner
-    '1. Superstar (01-00)\n2. New TopA (00-01)\n3. Vangkhua Fc (00-01)\n4. Nobincherra (00-01)\n5. Anangten (00-03)'  // Day 3 winner
+    '1. Superstar (01-00)\n2. New TopA (00-01)\n3. Vangkhua Fc (00-01)\n4. Nobincherra (00-01)\n5. Anangten (00-03)',  // Day 3 winner
+    'Coming soon...' // Day 4 winner
   ];
 
 // Map of video URLs for each day
@@ -35,6 +36,7 @@ function showMedia(day) {
   imageContainer.style.display = 'block';
   imageContainer.src = imagePath;
 
+  
   // Check if a video URL is available for the selected day
   const videoUrl = videoUrls[day];
   const videoContainer = document.getElementById('video-container');

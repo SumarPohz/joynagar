@@ -39,7 +39,7 @@ body, h1, h2, p {
   
   .days {
     display: flex;
-    gap: 10px;
+    gap: 4px;
     margin-bottom: 20px;
   }
   

@@ -25,9 +25,19 @@
           <div class="media-container">
             <img id="image-container" src="img/main.jpg" alt="Football Image">
             <div class="plyr__video-embed" id="video-container">
-              <video id="video-container" controls>
-                <source src="" type="video/mp4">
-              </video>
+              <div class="plyr__video-embed" id="player">
+                <iframe
+                    src="https://www.youtube.com/embed/SHXdzZLYdsA"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay"
+                ></iframe>
+            </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                  const player = new Plyr('#player');
+              });
+          </script>
           </div>
           <div class="winners">
             <h2>Winners:</h2>

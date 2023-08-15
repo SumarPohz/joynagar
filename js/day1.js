@@ -10,7 +10,8 @@ const winners = [
     '1. Vomthat (01-10)\n2. Sobiri (01-00)\n3. Kishan Sport Club (00-04)\n4. Bombastick Fc (01-00)\n5. Morning Star Fc (win by cross goal)', // Day 2 winner
     '1. Superstar (01-00)\n2. New TopA (00-01)\n3. Vangkhua Fc (00-01)\n4. Nobincherra (00-01)\n5. Anangten (00-03)',  // Day 3 winner
     '1. LYC FC (00-01)\n2. The Crazy Potato (04-01)\n3. ZRL Thuithar (02-00)\n4. Laikhou girls FC (02-00)\n5. Sorospur FC (01-00)', // Day 4 winner
-    'Coming soon...' // Day 5 winner
+    '1. Free fire (02-00)\n2. Joynagar (02-00)\n3. Pubg FC (02-01)\n4. Saveous young (00-01)\n5. Saitha Vanglai (06-02)', // Day 5 winner
+    'Coming soon...' // Day 6 winner
   ];
 
 // Map of video URLs for each day
@@ -20,7 +21,8 @@ const videoUrls = [
   'https://www.youtube.com/watch?v=WTJSt4wP2ME', // Day 2 video URL
   'https://www.youtube.com/watch?v=zJK2pLDeft4',  // Day 3 video URL
   'https://www.youtube.com/watch?v=fJRXmruLyzw',  // Day 4 video URL
-  'https://www.youtube.com/watch?v=uYsKB4Brp2M'  // Day 5 video URL
+  'https://www.youtube.com/watch?v=uYsKB4Brp2M',  // Day 5 video URL
+  'https://www.youtube.com/watch?v=uv1kDLcWRgk'  // Day 6 video URL
   // Add more video URLs for additional days if needed
 ];
 
